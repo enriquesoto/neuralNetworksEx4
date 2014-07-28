@@ -36,8 +36,7 @@ data = load('carTraining.data');
 X = data(:, [1,2,3,4,5,6]); 
 y = data(:, 7);
 
-[m, n] = size(X);  % n= numero de caracteristicas
-
+[m, n] = size(X);  
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
@@ -99,9 +98,6 @@ pause;
 %  the labels. You will now implement the "predict" function to use the
 %  neural network to predict the labels of the training set. This lets
 %  you compute the training set accuracy.
-
-
-%A=dataToNumTest('car-prueba.data',7,4, names);
 
 data = load('carTest.data');
 X = data(:, [1,2,3,4,5,6]); 
